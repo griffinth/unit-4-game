@@ -1,10 +1,10 @@
 var wins = 0;
 var losses = 0;
-//players score
+
 var addition = 0;
-//selects a random number from 19 t0 120
+
 var total = Math.floor((Math.random() * 100) + 19);
-//assigns random value to crystals from 1-12
+
 var purple = Math.floor((Math.random() * 12) + 1);
 var blue = Math.floor((Math.random() * 12) + 1);
 var yellow = Math.floor((Math.random() * 12) + 1);
@@ -32,7 +32,7 @@ var restart = function () {
     blue = Math.floor((Math.random() * 12) + 1);
     yellow = Math.floor((Math.random() * 12) + 1);
     green = Math.floor((Math.random() * 12) + 1);
-    //alert('restart');
+    
     updateAddition();
 }
   console.log(restart);
@@ -41,12 +41,11 @@ var logic = function () {
     if (addition == total) {
         wins = wins + 1;
 
-        audio.play();
-        restart();
+    
     } else if (addition > total) {
         losses = losses + 1;
 
-        audio.play();
+      
         restart();
     } else {
         updateAddition();

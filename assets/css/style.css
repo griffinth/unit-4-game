@@ -3,7 +3,7 @@
 header{
 	width:200px;
 	height: 70px;
-	background-color: #D66324;
+	background-color: rgb(204, 97, 39);
 	margin-bottom: 10px;
 }
 #name{
@@ -39,7 +39,7 @@ p{
 .result{
 	width:100px;
 	height: 100px;
-	background-color: #49E6D6;
+	background-color: rgb(70, 223, 207);
 	margin-left: 160px;
 	margin-top:-90px;
 }
