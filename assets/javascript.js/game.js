@@ -32,20 +32,20 @@ var restart = function () {
     blue = Math.floor((Math.random() * 12) + 1);
     yellow = Math.floor((Math.random() * 12) + 1);
     green = Math.floor((Math.random() * 12) + 1);
-    
+
     updateAddition();
 }
-  console.log(restart);
-  
+console.log(restart);
+
 var logic = function () {
     if (addition == total) {
         wins = wins + 1;
 
-    
+
     } else if (addition > total) {
         losses = losses + 1;
 
-      
+
         restart();
     } else {
         updateAddition();
